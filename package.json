@@ -1,0 +1,68 @@
+{
+  "name": "project-f",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.16.4",
+    "@mui/material": "^5.16.4",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.4",
+    "cheerio": "^1.0.0-rc.12",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "electron": "^31.2.1",
+    "express": "^4.19.2",
+    "framer-motion": "^11.3.12",
+    "http-proxy-middleware": "^3.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-router-dom": "^6.25.0",
+    "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.5",
+    "styled-components": "^6.1.12",
+    "wait-on": "^7.2.0",
+    "web-vitals": "^2.1.4",
+    "xml2js": "^0.6.2"
+  },
+  "scripts": {
+    "start": "cross-env BROWSER=none react-scripts start",
+    "build": "react-scripts build",
+    "electron": "electron .",
+    "dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && npm run electron\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "electron-reload": "^2.0.0-alpha.1",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.9"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
